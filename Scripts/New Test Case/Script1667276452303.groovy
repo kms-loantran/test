@@ -31,6 +31,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Logi
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Login here_cpassword'), 'tzH6RvlfSTg=')
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Sign up/input'), 5)
+
 WebUI.click(findTestObject('Object Repository/Page_Sign up/input'))
 
 WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
