@@ -35,11 +35,13 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Sign up/input
 
 WebUI.click(findTestObject('Object Repository/Page_Sign up/input'))
 
-WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
+WebUI.click(findTestObject('Object Repository/successfully'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_login page/input_Password_password'), 'tzH6RvlfSTg=')
-
-WebUI.click(findTestObject('Object Repository/Page_login page/input'))
+//WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
+//
+//WebUI.setEncryptedText(findTestObject('Object Repository/Page_login page/input_Password_password'), 'tzH6RvlfSTg=')
+//
+//WebUI.click(findTestObject('Object Repository/Page_login page/input'))
 
 WebUI.closeBrowser()
 
