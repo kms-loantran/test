@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://webapp-attack-2.azurewebsites.net')
 
+WebUI.maximizeWindow()
+
 //WebUI.navigateToUrl('https://webapp-attack-2.azurewebsites.net/')
 
 WebUI.click(findTestObject('Object Repository/Page_Welcome/a_Sign In'))
@@ -35,7 +37,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Sign up/input
 
 WebUI.click(findTestObject('Object Repository/Page_Sign up/input'))
 
-WebUI.click(findTestObject('Object Repository/successfully'))
+//WebUI.click(findTestObject('Object Repository/successfully'))
 
 //WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
 //
