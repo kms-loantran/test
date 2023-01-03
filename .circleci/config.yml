@@ -6,5 +6,5 @@ workflows:
   build:
     jobs:
       - katalon-studio/run:
-          version: "latest"
+          version: latest
           command_arguments: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey="4d690cd5-048f-419d-bba7-f560c06e7ded"'
