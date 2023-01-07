@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:01:34,176
+1. openBrowser("https://webapp-attack-2.azurewebsites.net")
+
+2
+00:01:34,182 --> 00:01:34,413
+5. maximizeWindow()
+
+3
+00:01:34,413 --> 00:01:36,828
+9. click(findTestObject("Object Repository/Page_Welcome/a_Sign In"))
+
+4
+00:01:36,829 --> 00:01:38,518
+13. click(findTestObject("Object Repository/Page_login page/a_Register here"))
+
+5
+00:01:38,519 --> 00:01:39,745
+17. setText(findTestObject("Object Repository/Page_Sign up/input_Login here_email"), "test@test.com")
+
+6
+00:01:39,746 --> 00:01:40,182
+21. setEncryptedText(findTestObject("Object Repository/Page_Sign up/input_Login here_password"), "tzH6RvlfSTg=")
+
+7
+00:01:40,182 --> 00:01:40,540
+25. setEncryptedText(findTestObject("Object Repository/Page_Sign up/input_Login here_cpassword"), "tzH6RvlfSTg=")
+
+8
+00:01:40,540 --> 00:01:41,134
+29. waitForElementVisible(findTestObject("Object Repository/Page_Sign up/input"), 5)
+
+9
+00:01:41,135 --> 00:01:42,595
+33. click(findTestObject("Object Repository/Page_Sign up/input"))
+
+10
+00:01:42,596 --> 00:01:42,740
+37. closeBrowser()
+
