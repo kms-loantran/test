@@ -1,0 +1,22 @@
+
+pipeline {
+    agent { 
+    	docker {
+      		image 'katalonstudio/katalon:8.4.1'
+      		args '-u root'
+    	}
+    }
+    stages {
+        stage('Test') {
+            steps {
+            	sh 'katalonc.sh -projectPath="/Users/loantran/.jenkins/workspace/vicky - docker" -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test maximize windows" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" --config -webui.autoUpdateDrivers=true'
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'Reports/**/*.*', fingerprint: true
+            junit 'Reports/**/JUnit_Report.xml'
+        }
+    }
+}
