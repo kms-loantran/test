@@ -16,6 +16,7 @@ steps:
   inputs:
     version: '8.5.5'
     executeArgs: '-retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -apiKey="4d690cd5-048f-419d-bba7-f560c06e7ded" --config -webui.autoUpdateDrivers=true'
+    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
