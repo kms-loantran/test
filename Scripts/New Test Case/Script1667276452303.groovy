@@ -19,31 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://webapp-attack-2.azurewebsites.net')
 
-WebUI.maximizeWindow()
-
-//WebUI.navigateToUrl('https://webapp-attack-2.azurewebsites.net/')
-
-WebUI.click(findTestObject('Object Repository/Page_Welcome/a_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/Page_login page/a_Register here'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Sign up/input_Login here_email'), 'test@test.com')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Login here_password'), 'tzH6RvlfSTg=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Login here_cpassword'), 'tzH6RvlfSTg=')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Sign up/input'), 5)
-
-WebUI.click(findTestObject('Object Repository/Page_Sign up/input'))
-
-//WebUI.click(findTestObject('Object Repository/successfully'))
-
-//WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
+//WebUI.maximizeWindow()
 //
-//WebUI.setEncryptedText(findTestObject('Object Repository/Page_login page/input_Password_password'), 'tzH6RvlfSTg=')
+////WebUI.navigateToUrl('https://webapp-attack-2.azurewebsites.net/')
 //
-//WebUI.click(findTestObject('Object Repository/Page_login page/input'))
+//WebUI.click(findTestObject('Object Repository/Page_Welcome/a_Sign In'))
+//
+//WebUI.click(findTestObject('Object Repository/Page_login page/a_Register here'))
+//
+//WebUI.setText(findTestObject('Object Repository/Page_Sign up/input_Login here_email'), 'test@test.com')
+//
+//WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Login here_password'), 'tzH6RvlfSTg=')
+//
+//WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign up/input_Login here_cpassword'), 'tzH6RvlfSTg=')
+//
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Sign up/input'), 5)
+//
+//WebUI.click(findTestObject('Object Repository/Page_Sign up/input'))
+//
+////WebUI.click(findTestObject('Object Repository/successfully'))
+//
+////WebUI.setText(findTestObject('Object Repository/Page_login page/input_UserID_email'), 'test@test.com')
+////
+////WebUI.setEncryptedText(findTestObject('Object Repository/Page_login page/input_Password_password'), 'tzH6RvlfSTg=')
+////
+////WebUI.click(findTestObject('Object Repository/Page_login page/input'))
 
 WebUI.closeBrowser()
 
