@@ -31,5 +31,5 @@ jobs:
       with:
           ks_api_key: ${{ secrets.API_KEY }} 
           projectPath: ${{ github.workspace }} 
-          ksVersion: '8.6.0'
+          ksVersionNumber: '8.6.0'
           ks_command: 'katalon-execute.sh -noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true'
