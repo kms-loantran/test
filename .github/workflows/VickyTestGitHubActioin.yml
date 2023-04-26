@@ -23,11 +23,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Setup xvfb (Linux)
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
+        # start xvfb in the background
+        sudo /usr/bin/Xvfb $DISPLAY -screen 0 1920x1080x24 &
     - name: Checkout
       uses: actions/checkout@v2
-    - run: npm install
-    - run: sudo apt-get install xvfb
-    - run: xvfb-run --auto-servernum npm test
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
