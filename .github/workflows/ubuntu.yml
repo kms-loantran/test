@@ -29,6 +29,7 @@ jobs:
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
-          ks_api_key: ${{ secrets.API_KEY }}
+          version: '8.6.0'
           projectPath: '${{ github.workspace }}'
-          ks_command: 'katalon-execute.sh -noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default"  --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
+
