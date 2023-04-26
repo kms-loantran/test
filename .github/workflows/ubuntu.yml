@@ -16,21 +16,18 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write-all
+  contents: read
 
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
 
        
     - name: Checkout
       uses: actions/checkout@v2
-    - run: npm install
-    - run: sudo apt-get install xvfb
-    - run: xvfb-run --auto-servernum npm test
     
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
