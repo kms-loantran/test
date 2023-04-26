@@ -25,9 +25,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - run: npm install
+    - run: sudo apt-get install xvfb
+    - run: xvfb-run --auto-servernum npm test
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
           version: '8.6.0'
           projectPath: '${{ github.workspace }}'
-          args: 'katalon-execute.sh -noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
