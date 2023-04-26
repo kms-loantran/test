@@ -31,6 +31,8 @@ jobs:
         sudo /usr/bin/Xvfb $DISPLAY -screen 0 1920x1080x24 &
     - name: Checkout
       uses: actions/checkout@v2
+    
+    - run: xvfb-run -s '-screen 0 1920x1080x24'
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
