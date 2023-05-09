@@ -30,6 +30,10 @@ jobs:
       
     - name: Run headless test
       uses: coactions/setup-xvfb@v1
+      with:
+          run: npm test
+          working-directory: ./ #optional
+          options: #optional
 
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
