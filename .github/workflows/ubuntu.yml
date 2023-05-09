@@ -4,7 +4,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Vicky test github actions
+name: Vicky test github actions - UBUNTU
 
 on:
   push:
@@ -21,19 +21,16 @@ permissions:
 env:
   KATALON_TEST_SUITE: "Test Suites/New Test Suite"
   
-jobs:
-    
+jobs:    
   build:
-
     runs-on: ubuntu-latest
-
-    steps:
-
-       
+    steps:       
     - name: Checkout
       uses: actions/checkout@v2
-    - run: sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
-    - run: sudo /usr/bin/Xvfb :0 -screen 0 1280x1024x24 &
+    - name: Run headless test
+      uses: GabrielBB/xvfb-action@v1
+      with:
+        run: npm test
 
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
