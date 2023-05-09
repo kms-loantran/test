@@ -27,6 +27,15 @@ jobs:
     steps:       
     - name: Checkout
       uses: actions/checkout@v2
+      
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+          node-version: '13.x'
+
+    - name: Install Dependencies
+      run: npm install
+      
     - name: Run headless test
       uses: coactions/setup-xvfb@v1
       with:
