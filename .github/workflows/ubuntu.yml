@@ -36,9 +36,9 @@ jobs:
 
   #solution 2: using KRE directy
     - name: download KRE package
-      run: curl "https://download.katalon.com/8.6.0/Katalon_Studio_Engine_Linux_64-8.6.0.tar.gz" -o "katalon_runtime_engine.zip"
+      run: curl "https://download.katalon.com/8.6.0/Katalon_Studio_Engine_Linux_64-8.6.0.tar.gz" -o "katalon_runtime_engine"
     - name: unzip KRE package
-      run: unzip katalon_runtime_engine.zip
+      run: unzip katalon_runtime_engine
     - name: run Katalon script using KRE
       uses: coactions/setup-xvfb@v1
       with:
