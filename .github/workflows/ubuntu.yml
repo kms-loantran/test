@@ -47,9 +47,9 @@ jobs:
   #        options: #optional
           
           
-  #solution 3: using newer Katalon GitHub action: katalon-studio/katalon-studio-github-action@v3
+  #solution 3: using newer Katalon GitHub action: katalon-studio/katalon-studio-github-action@v2.2
     - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@v3
+      uses: katalon-studio/katalon-studio-github-action@v2.2
       with:
           version: '8.6.0'
           projectPath: '${{ github.workspace }}'
