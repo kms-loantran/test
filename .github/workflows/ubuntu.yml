@@ -42,6 +42,6 @@ jobs:
     - name: run Katalon script using KRE
       uses: coactions/setup-xvfb@v1
       with:
-          run: Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="$(Build.Repository.LocalPath)/test/vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}
+          run: ./Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath=${{ github.workspace }} -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}
           working-directory: ./ #optional
           options: #optional
