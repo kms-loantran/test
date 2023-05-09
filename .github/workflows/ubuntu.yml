@@ -30,4 +30,4 @@ jobs:
     - name: install docker
       run: docker pull katalonstudio/katalon
     - name: run Katalon script using Katalon Docker Image
-      run: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuitePath=${{KATALON_TEST_SUITE}} -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config  -webui.autoUpdateDrivers=true
+      run: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuitePath="$KATALON_TEST_SUITE" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config  -webui.autoUpdateDrivers=true
