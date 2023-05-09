@@ -36,7 +36,7 @@ jobs:
 
   #solution 2: using KRE directy
     - name: download KRE package
-      run: curl "https://download.katalon.com/${KATALON_VERSION}/Katalon_Studio_Engine_Windows_64-${VERSION}.zip" -o "katalon_runtime_engine.zip"
+      run: curl "https://download.katalon.com/$KATALON_VERSION/Katalon_Studio_Engine_Windows_64-${VERSION}.zip" -o "katalon_runtime_engine.zip"
     - name: unzip KRE package
       run: unzip katalon_runtime_engine.zip
     - name: run Katalon script using KRE
