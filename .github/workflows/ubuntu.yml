@@ -41,13 +41,10 @@ jobs:
       run: tar -xvf katalon_runtime_engine.tar.gz
     - run: ls -al
     - run: ls Katalon_Studio_Engine_Linux_64-8.6.0
-    - run: sudo apt-get install at-spi2-core
+    - run: sudo apt-get install xvfb
     - name: run Katalon script using KRE
-      uses: coactions/setup-xvfb@v1
-      with:
-          run: ${{ github.workspace }}/Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
-          working-directory: ./ #optional
-          options: #optional
+      run: xvfb-run ${{ github.workspace }}/Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
+
           
           
   #solution 3: using newer Katalon GitHub action: katalon-studio/katalon-studio-github-action@v2.2 - ERROR - Katalonc: Cannot open display: 
