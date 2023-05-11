@@ -14,7 +14,7 @@ public class GlobalVariable {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
+            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters(), selectedVariables)
     
             
         } catch (Exception e) {
