@@ -43,7 +43,7 @@ jobs:
     - run: ls Katalon_Studio_Engine_Linux_64-8.6.0
     - run: sudo apt-get install xvfb
     - name: run Katalon script using KRE
-      run: xvfb-run -s '-screen 0 1024x768x24' /Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
+      run: xvfb-run -s '-screen 0 1024x768x24' Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
 
           
           
