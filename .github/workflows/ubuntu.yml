@@ -29,21 +29,22 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
   #solution1: using docker
-  #  - name: install docker
-  #    run: docker pull katalonstudio/katalon
-  #  - name: run Katalon script using Katalon Docker Image
-  #    run: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuitePath="$KATALON_TEST_SUITE" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config  -webui.autoUpdateDrivers=true
-
+    - name: install docker
+      run: docker pull katalonstudio/katalon
+    - name: run Katalon script using Katalon Docker Image
+      # run: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuitePath="$KATALON_TEST_SUITE" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config  -webui.autoUpdateDrivers=true
+      run: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -apiKey=${{ secrets.API_KEY }} --config  -webui.autoUpdateDrivers=true
+      
   #solution 2: using KRE directory - NOT WORK YET
-    - name: download KRE package
-      run: curl "https://download.katalon.com/8.6.0/Katalon_Studio_Engine_Linux_64-8.6.0.tar.gz" -o "katalon_runtime_engine.tar.gz"
-    - name: unzip KRE package
-      run: tar -xvf katalon_runtime_engine.tar.gz
-    - run: ls -al
-    - run: ls Katalon_Studio_Engine_Linux_64-8.6.0
-    - run: sudo apt-get install xvfb
-    - name: run Katalon script using KRE
-      run: xvfb-run -s '-screen 0 1024x768x24' Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
+  #  - name: download KRE package
+  #    run: curl "https://download.katalon.com/8.6.0/Katalon_Studio_Engine_Linux_64-8.6.0.tar.gz" -o "katalon_runtime_engine.tar.gz"
+  #  - name: unzip KRE package
+  #    run: tar -xvf katalon_runtime_engine.tar.gz
+  #  - run: ls -al
+  #  - run: ls Katalon_Studio_Engine_Linux_64-8.6.0
+  #  - run: sudo apt-get install xvfb
+  #  - name: run Katalon script using KRE
+  #    run: xvfb-run -s '-screen 0 1024x768x24' Katalon_Studio_Engine_Linux_64-8.6.0/katalonc -noSplash -runMode=console -projectPath="vicky test.prj" -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -apiKey=${{ secrets.API_KEY }}  
 
           
           
