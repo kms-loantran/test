@@ -17,6 +17,11 @@ on:
 permissions:
   contents: read
 
+
+env:
+  KATALON_TEST_SUITE: "Test Suites/New Test Suite"
+  KATALON_PROFILE: "default"
+
 jobs:
   build:
 
@@ -30,4 +35,4 @@ jobs:
       with:
           version: '8.6.0'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="$KATALON_PROFILE" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
