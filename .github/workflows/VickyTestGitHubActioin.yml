@@ -20,13 +20,13 @@ permissions:
 
 env:
   KATALON_TEST_SUITE: "Test Suites/New Test Suite"
-  KATALON_PROFILE: "QA"
+  KATALON_PROFILE: "default"
 
 jobs:
   build:
     #env: 
     #  KATALON_TEST_SUITE: "Test Suites/New Test Suite"
-    #  KATALON_PROFILE: "QA"
+    #  KATALON_PROFILE: "default"
     
     runs-on: windows-latest
 
