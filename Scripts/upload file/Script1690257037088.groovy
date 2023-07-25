@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
 
 WebUI.openBrowser('')
 
@@ -29,7 +30,9 @@ WebUI.click(findTestObject('Choose File/Page_Store/button_Sign in'))
 
 WebUI.delay(1)
 
-String filePath = System.getProperty("user.dir") + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
+//String filePath = System.getProperty("user.dir") + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
+
+String filePath = RunConfiguration.getProjectDir() + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
 
 println 'vicky test filePathhhhhhhhhhhhhhh: ' + filePath
 
