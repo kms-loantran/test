@@ -30,9 +30,9 @@ WebUI.click(findTestObject('Choose File/Page_Store/button_Sign in'))
 
 WebUI.delay(1)
 
-//String filePath = System.getProperty("user.dir") + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
+String filePath = System.getProperty("user.dir") + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
 
-String filePath = RunConfiguration.getProjectDir() + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
+//String filePath = RunConfiguration.getProjectDir() + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
 
 println 'vicky test filePathhhhhhhhhhhhhhh: ' + filePath
 
