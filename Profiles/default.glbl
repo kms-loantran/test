@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'loan.tran@katalon.com'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/VsOjIYnw4q+YoVSkbYI4g=='</initValue>
+      <name>pass</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

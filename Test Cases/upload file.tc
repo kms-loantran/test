@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>upload file</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a438aa2-e24a-48e4-bc94-7ba5882c020b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f137db25-d13b-4017-bd14-b42f700e8000</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f137db25-d13b-4017-bd14-b42f700e8000</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
