@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'loan.tran@katalon.com'</initValue>
+      <initValue>''</initValue>
       <name>username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/VsOjIYnw4q+YoVSkbYI4g=='</initValue>
+      <initValue>''</initValue>
       <name>pass</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
