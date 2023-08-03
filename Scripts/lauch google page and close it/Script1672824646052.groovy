@@ -17,6 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+String ks_Chromedriver = DriverFactory.getChromeDriverPath()
+println 'loan testttttttt: ' + ks_Chromedriver
+System.setProperty("webdriver.chrome.driver", ks_Chromedriver)
+
 WebUI.openBrowser('')
 WebUI.navigateToUrl('https://google.com')
 WebUI.closeBrowser()
+
