@@ -2,14 +2,14 @@
 pipeline {
     agent { 
     	docker {
-      		image 'katalonstudio/katalon:8.4.1'
+      		image 'katalonstudio/katalon'
       		args '-u root'
     	}
     }
     stages {
         stage('Test') {
             steps {
-            	sh 'katalonc.sh -projectPath="/Users/loantran/.jenkins/workspace/vicky - docker" -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test maximize windows" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" --config -webui.autoUpdateDrivers=true'
+            	sh 'katalonc.sh -projectPath="/Users/loantran/.jenkins/workspace/vicky - docker" -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test maximize windows" -executionProfile="default" -apiKey="7fdff4d4-2084-40e1-95e3-08033a018e6f" --config -webui.autoUpdateDrivers=true'
             }
         }
     }
