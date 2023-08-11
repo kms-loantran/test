@@ -28,11 +28,11 @@ jobs:
     #  KATALON_TEST_SUITE: "Test Suites/New Test Suite"
     #  KATALON_PROFILE: "default"
     
-    runs-on: macos-latest
+    runs-on: self-hosted
 
     steps:
-    #- name: Checkout
-    #  uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
     #run with an existing KRE package
     - name : Run Test by command with KRE  
       run : |
