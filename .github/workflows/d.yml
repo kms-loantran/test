@@ -31,11 +31,11 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    #- name: Checkout
+    #  uses: actions/checkout@v2
     #run with an existing KRE package
     - name : Run Test by command with KRE  
       run : |
         cd "/Users/loan.tran/Documents/Katalon/Tools/8.6.0/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS"
-        ./katalonc -noSplash -runMode=console -projectPath='${{ github.workspace }}' -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
+        ./katalonc -noSplash -runMode=console -projectPath="-projectPath="/Users/loan.tran/Downloads/test/vicky test.prj"" -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
    
