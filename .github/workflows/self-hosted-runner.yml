@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Vicky test github actions
+name: Vicky using self-hosted runner
 
 on:
   push:
@@ -38,6 +38,6 @@ jobs:
     - name : Run Test by command with KRE  
       run : |
         cd "/Users/loan.tran/Documents/Katalon/Tools/8.6.0/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS"
-        ./katalonc -noSplash -runMode=console -projectPath="/Users/loan.tran/Downloads/test/vicky test.prj" -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
-        #./katalonc -noSplash -runMode=console -projectPath='${{ github.workspace }}' -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
+        #./katalonc -noSplash -runMode=console -projectPath="/Users/loan.tran/Downloads/test/vicky test.prj" -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
+        ./katalonc -noSplash -runMode=console -projectPath='${{ github.workspace }}' -retry=0 -testSuitePath="${{env.KATALON_TEST_SUITE}}" -browserType="Chrome" -executionProfile=${{env.KATALON_PROFILE}} -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true
    
