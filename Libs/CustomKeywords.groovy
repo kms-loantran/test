@@ -40,11 +40,11 @@ def static "com.testwithhari.katalon.plugins.Gmail.readLatestEMailBodyContent"(
 }
 
 
-def static "com.testwithhari.katalon.plugins.Gmail.deleteAllEMails"(
+def static "com.testwithhari.katalon.plugins.Gmail.getEmailsCount"(
     	String emailID	
      , 	String password	
      , 	String folderLableName	) {
-    (new com.testwithhari.katalon.plugins.Gmail()).deleteAllEMails(
+    (new com.testwithhari.katalon.plugins.Gmail()).getEmailsCount(
         	emailID
          , 	password
          , 	folderLableName)
@@ -66,11 +66,11 @@ def static "com.testwithhari.katalon.plugins.Gmail.sendEmail"(
 }
 
 
-def static "com.testwithhari.katalon.plugins.Gmail.getEmailsCount"(
+def static "com.testwithhari.katalon.plugins.Gmail.deleteAllEMails"(
     	String emailID	
      , 	String password	
      , 	String folderLableName	) {
-    (new com.testwithhari.katalon.plugins.Gmail()).getEmailsCount(
+    (new com.testwithhari.katalon.plugins.Gmail()).deleteAllEMails(
         	emailID
          , 	password
          , 	folderLableName)
@@ -102,6 +102,11 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+}
+
+
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
     	String testName	
      , 	RectangleSize viewportSize	) {
@@ -111,8 +116,10 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }
 
 
@@ -127,10 +134,18 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeIndexes"(
+    	Sheet sheet	
+     , 	int rowInd1	
+     , 	int colInd1	
+     , 	int rowInd2	
+     , 	int colInd2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValuesByRangeIndexes(
+        	sheet
+         , 	rowInd1
+         , 	colInd1
+         , 	rowInd2
+         , 	colInd2)
 }
 
 
@@ -154,21 +169,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByRangeAddre
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeIndexes"(
-    	Sheet sheet	
-     , 	int rowInd1	
-     , 	int colInd1	
-     , 	int rowInd2	
-     , 	int colInd2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValuesByRangeIndexes(
-        	sheet
-         , 	rowInd1
-         , 	colInd1
-         , 	rowInd2
-         , 	colInd2)
-}
-
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
     	String filePath	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelFile(
@@ -176,9 +176,18 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
+    	String filePath	
+     , 	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
+        	filePath
+         , 	workbook)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
     	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
         	workbook)
 }
 
@@ -192,9 +201,9 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
     	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
         	workbook)
 }
 
@@ -219,15 +228,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
     	String filePath	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
         	filePath)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
-    	String filePath	
-     , 	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
-        	filePath
-         , 	workbook)
 }
 
 
@@ -256,9 +256,11 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"
 
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	String filePath	) {
+    	Workbook wbs	
+     , 	String sheetName	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	filePath)
+        	wbs
+         , 	sheetName)
 }
 
 
@@ -272,11 +274,9 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
 
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	Workbook wbs	
-     , 	String sheetName	) {
+    	String filePath	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	wbs
-         , 	sheetName)
+        	filePath)
 }
 
 
