@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('https://google.com')
 
-KeywordUtil.markFailed("log failed")
+KeywordUtil.markFailed("log failed - updated")
 
 //WebUI.maximizeWindow()
 //
