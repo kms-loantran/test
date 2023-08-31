@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 
 
-WebUI.openBrowser('https://webapp-attack-2.azurewebsites.net')
+WebUI.openBrowser('https://google.com')
 
 KeywordUtil.markFailed("log failed")
 

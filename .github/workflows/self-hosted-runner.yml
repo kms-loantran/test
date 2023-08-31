@@ -9,7 +9,7 @@ on:
   push:
     branches:
     - 'master'
-    - 'main'
+    #- 'main'
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
@@ -44,7 +44,7 @@ jobs:
     
     #run with a newly downloaded KRE package
     - name: 'Katalon Studio Github Action'
-      uses: katalon-studio/katalon-studio-github-action@v2
+      uses: katalon-studio/katalon-studio-github-action@v3.0
       with:
           version: '8.6.5'
           projectPath: '${{ github.workspace }}'
