@@ -1,0 +1,161 @@
+[35m[Appium][39m Welcome to Appium v2.0.0-rc.5
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { loglevel: [32m'info'[39m, port: [33m64565[39m }
+[35m[Appium][39m Attempting to load driver xcuitest...
+[Appium] Attempting to load driver uiautomator2...
+[Appium] Appium REST http interface listener started on http://0.0.0.0:64565
+[Appium] You can provide the following URLS in your client code to connect to this server:
+[Appium] 	http://127.0.0.1:64565/ (only accessible from the same host)
+[Appium] 	http://192.168.1.4:64565/
+[Appium] Available drivers:
+[Appium]   - xcuitest@4.32.23 (automationName 'XCUITest')
+[Appium]   - uiautomator2@2.29.3 (automationName 'UiAutomator2')
+[Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/status[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /status 200 3 ms - 44
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/status[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /status 200 1 ms - 44
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m
+[38;5;0m[HTTP][0m {"desiredCapabilities":{"appium:newCommandTimeout":1800,"appium:automationName":"XCUITest","appium:fullReset":false,"appium:platformVersion":"16.4","appium:noReset":true,"appium:udid":"0E7160D6-C71E-4CE3-A50A-5515B6D171D6","appium:wdaLocalPort":64586,"waitForAppScript":"true;","appium:deviceName":"iPad (10th generation)","platformName":"iOS","appium:realDeviceLogger":"/Users/loan.tran/Documents/Katalon/Tools/8.5.4.beta2 - support iOS mobile with Xcode 14x and appium 2x/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:app":"/Users/loan.tran/Downloads/test/Data/Coffee Timer - iPad10 - 16.2.app"},"capabilities":{"firstMatch":[{"appium:app":"/Users/loan.tran/Downloads/test/Data/Coffee Timer - iPad10 - 16.2.app","appium:automationName":"XCUITest","appium:deviceName":"iPad (10th generation)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformVersion":"16.4","appium:realDeviceLogger":"/Users/loan.tran/Documents/Katalon/Tools/8.5.4...
+[Appium] Attempting to find matching driver for automationName 'XCUITest' and platformName 'ios'
+[Appium] The 'xcuitest' driver was installed and matched caps.
+[Appium] Will require it at /Users/loan.tran/.appium/node_modules/appium-xcuitest-driver
+[38;5;16m[AppiumDriver@d072][0m Appium v2.0.0-rc.5 creating new XCUITestDriver (v4.32.23) session
+[38;5;16m[AppiumDriver@d072][0m Checking BaseDriver versions for Appium and XCUITestDriver
+[38;5;16m[AppiumDriver@d072][0m Appium's BaseDriver version is 9.3.16
+[38;5;16m[AppiumDriver@d072][0m XCUITestDriver's BaseDriver version is 9.3.16
+[38;5;32m[XCUITestDriver@5244][0m The following capabilities were provided, but are not recognized by Appium:
+[38;5;32m[XCUITestDriver@5244][0m   realDeviceLogger
+[38;5;32m[XCUITestDriver@5244][0m   waitForAppScript
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Session created with session id: b568067b-2e2c-4834-918b-3a981bdc9ac7
+[38;5;64m[iOSSim][0m Constructing iOS simulator for Xcode version 14.3.1 with udid '0E7160D6-C71E-4CE3-A50A-5515B6D171D6'
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Determining device to run tests on: udid: '0E7160D6-C71E-4CE3-A50A-5515B6D171D6', real device: false
+[38;5;80m[BaseDriver][0m Using local app '/Users/loan.tran/Downloads/test/Data/Coffee Timer - iPad10 - 16.2.app'
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Using WDA path: '/Users/loan.tran/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Using WDA agent: '/Users/loan.tran/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[38;5;48m[XCUITest][0m Continuing without capturing device logs: iOS Simulator with udid '0E7160D6-C71E-4CE3-A50A-5515B6D171D6' is not running
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Setting up simulator
+[38;5;64m[iOSSim][0m Starting Simulator UI: open -Fn /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
+[38;5;64m[iOSSim][0m Simulator with UDID 0E7160D6-C71E-4CE3-A50A-5515B6D171D6 booted in 28.172s
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m App 'com.ashfurrow.Coffee-Timer' is already installed
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m noReset is requested. The app will not be be (re)installed
+[38;5;112m[DevCon Factory][0m Requesting connection for device 0E7160D6-C71E-4CE3-A50A-5515B6D171D6 on local port 64586
+[38;5;112m[DevCon Factory][0m Successfully requested the connection for 0E7160D6-C71E-4CE3-A50A-5515B6D171D6:64586
+[38;5;128m[WD Proxy][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Launching WebDriverAgent on the device
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m There is no need to perform the project cleanup. A fresh install has been detected
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m connect ECONNREFUSED 127.0.0.1:64586
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Determined the downstream protocol as 'W3C'
+[38;5;16m[AppiumDriver@d072][0m New XCUITestDriver session created successfully, session b568067b-2e2c-4834-918b-3a981bdc9ac7 added to master session list
+[38;5;0m[HTTP][0m <-- POST /session 200 80856 ms - 821
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7[39m
+[38;5;0m[HTTP][0m {}
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Merging WDA caps over Appium caps for session detail response
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7 200 209 ms - 768
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7[39m
+[38;5;0m[HTTP][0m {}
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Merging WDA caps over Appium caps for session detail response
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7 200 1 ms - 768
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/status[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /status 200 1 ms - 44
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/timeouts[39m
+[38;5;0m[HTTP][0m {"implicit":60000}
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/timeouts 200 1 ms - 14
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/execute/sync[39m
+[38;5;0m[HTTP][0m {"script":"mobile: source","args":[{"format":"xml","excludedAttributes":"visible"}]}
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/execute/sync 200 394 ms - 11200
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/screenshot[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/screenshot 200 186 ms - 171788
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element[39m
+[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@type = 'XCUIElementTypeStaticText' and @label = 'Colombian' and @name = 'Colombian' and @value = 'Colombian']"}
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element 200 243 ms - 137
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/window/rect[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/window/rect 200 42 ms - 49
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/elements[39m
+[38;5;0m[HTTP][0m {"using":"xpath","value":"//*[@type = 'XCUIElementTypeStaticText' and @label = 'Colombian' and @name = 'Colombian' and @value = 'Colombian']"}
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/elements 200 274 ms - 139
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element/1A000000-0000-0000-8C4A-000000000000/location[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element/1A000000-0000-0000-8C4A-000000000000/location 200 19 ms - 26
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element/1A000000-0000-0000-8C4A-000000000000/click[39m
+[38;5;0m[HTTP][0m {"id":"1A000000-0000-0000-8C4A-000000000000"}
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;32m[XCUITestDriver@5244 (b568067b)][0m Replacing sessionId 94254252-3683-49B6-BC5E-1A39510AF8CB with b568067b-2e2c-4834-918b-3a981bdc9ac7
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/element/1A000000-0000-0000-8C4A-000000000000/click 200 801 ms - 65
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/execute/sync[39m
+[38;5;0m[HTTP][0m {"script":"mobile: source","args":[{"format":"xml","excludedAttributes":"visible"}]}
+[38;5;0m[HTTP][0m <-- POST /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/execute/sync 200 141 ms - 3686
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7/screenshot[39m
+[38;5;0m[HTTP][0m {}
+[38;5;0m[HTTP][0m <-- GET /session/b568067b-2e2c-4834-918b-3a981bdc9ac7/screenshot 200 134 ms - 179692
+[38;5;0m[HTTP][0m 
+[38;5;0m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/session/b568067b-2e2c-4834-918b-3a981bdc9ac7[39m
+[38;5;0m[HTTP][0m {}
+[38;5;16m[AppiumDriver@d072][0m Removing session b568067b-2e2c-4834-918b-3a981bdc9ac7 from our master session list
+[38;5;112m[DevCon Factory][0m Releasing connections for 0E7160D6-C71E-4CE3-A50A-5515B6D171D6 device on any port number
+[38;5;112m[DevCon Factory][0m Found cached connections to release: ["0E7160D6-C71E-4CE3-A50A-5515B6D171D6:64586"]
+[38;5;0m[HTTP][0m <-- DELETE /session/b568067b-2e2c-4834-918b-3a981bdc9ac7 200 29 ms - 14
+[38;5;0m[HTTP][0m 
