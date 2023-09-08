@@ -23,7 +23,11 @@ import org.openqa.selenium.Keys as Keys
 //
 //Mobile.closeApplication()
 
-Mobile.startApplication('/Users/loan.tran/Downloads/test/Data/SociosIntegration.ipa', true)
+'start ipa apps and close it'
+
+//Mobile.startApplication('/Users/loan.tran/Downloads/test/Data/SociosIntegration.ipa', true)
+
+Mobile.startApplication('', true) //run this script with TestCLoud
 
 Mobile.closeApplication()
 
