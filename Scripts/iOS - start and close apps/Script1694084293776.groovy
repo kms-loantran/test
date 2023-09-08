@@ -25,9 +25,13 @@ import org.openqa.selenium.Keys as Keys
 
 'start ipa apps and close it'
 
-//Mobile.startApplication('/Users/loan.tran/Downloads/test/Data/SociosIntegration.ipa', true)
+//Mobile.startApplication('/Users/loan.tran/Downloads/test/Data/SociosIntegration.ipa', true) //run this script with TestCLoud -> the apps will be taken from the one selected on Schedule Test Run dialog
 
-Mobile.startApplication('', true) //run this script with TestCLoud
+//Mobile.startApplication('', true) //run this script with TestCLoud -> the apps will be taken from the one selected on Schedule Test Run dialog
+
+String appsPath = System.getProperty('user.dir') + File.separator + 'Data' + File.separator + 'SociosIntegration.ipa' //run this script with TestCLoud -> the apps will be taken from the one selected on Schedule Test Run dialog
+
+Mobile.startApplication(appsPath, true)
 
 Mobile.closeApplication()
 
