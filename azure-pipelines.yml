@@ -15,7 +15,7 @@ steps:
   displayName: 'Run a one-line script'
 - task: katalonTask@1
   inputs:
-    version: '8.6.8'
+    version: '9.0.0.beta'
     #executeArgs: '-retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -apiKey="4d690cd5-048f-419d-bba7-f560c06e7ded" --config -webui.autoUpdateDrivers=true'
     #xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default"  -apiKey="a5c1f077-2ee0-4584-ba26-978ee2e11484" --config -webui.autoUpdateDrivers=true'
