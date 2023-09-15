@@ -21,7 +21,8 @@ import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.openBrowser('https://google.com')
 
-KeywordUtil.markFailed("log failed")
+WebUI.click(findTestObject('Object Repository/demo page/Page_CURA Healthcare Service/a_Make Appointment'))
+
 
 //WebUI.maximizeWindow()
 //
