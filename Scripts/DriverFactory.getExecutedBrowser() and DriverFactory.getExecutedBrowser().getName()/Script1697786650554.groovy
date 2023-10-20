@@ -18,8 +18,34 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.driver.WebUIDriverType
+import com.kms.katalon.core.configuration.RunConfiguration
 
 WebUI.openBrowser('https://google.com')
+
+Map m = RunConfiguration.getExecutionProperties()
+
+String browserType = m.get("drivers").get("system").get("WebUI").get("browserType")
+
+println 'vicky testtttttt browserType: ' + browserType
+
+String browserName =''
+
+switch(browserType) { 
+   default:
+		browserName = 'Chrome'
+		break;
+   case 'FIREFOX_DRIVER': 
+   		browserName = 'Firefox'
+		break;
+   case 'EDGE_CHROMIUM_DRIVER':
+		browserName = 'Edge Chromium'
+		break;
+   case 'SAFARI_DRIVER':
+		browserName = 'Safari'
+		break;
+} 
+
+println 'vicky test browser Name: ' + browserName
 
 WebUIDriverType executedBrowser1 = DriverFactory.getExecutedBrowser()
 
