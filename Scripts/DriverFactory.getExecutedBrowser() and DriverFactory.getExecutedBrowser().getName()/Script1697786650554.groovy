@@ -23,9 +23,9 @@ WebUI.openBrowser('https://google.com')
 
 WebUIDriverType executedBrowser1 = DriverFactory.getExecutedBrowser()
 
-WebUIDriverType executedBrowser2 = DriverFactory.getExecutedBrowser().getName()
-
 println 'vicky test 1: ' + executedBrowser1
+
+WebUIDriverType executedBrowser2 = DriverFactory.getExecutedBrowser().getName()
 
 println 'vicky test 2: ' + executedBrowser2
 
