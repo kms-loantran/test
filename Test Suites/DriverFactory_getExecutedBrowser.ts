@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>DriverFactory.getExecutedBrowser() and DriverFactory.getExecutedBrowser().getName()</name>
+   <name>DriverFactory_getExecutedBrowser</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
