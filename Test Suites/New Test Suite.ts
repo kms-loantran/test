@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>8b30c872-d6a5-4223-807a-34aca66c0a4b</testSuiteGuid>
    <testCaseLink>
-      <guid>0e399a2f-a0d8-43dc-8283-c28fc05f4dc2</guid>
+      <guid>5b26e691-82da-4119-bd41-121d93d275a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/New Test Case</testCaseId>
+      <testCaseId>Test Cases/DriverFactory.getExecutedBrowser() and DriverFactory.getExecutedBrowser().getName()</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
