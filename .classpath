@@ -157,13 +157,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/loan.tran/Downloads/test/Drivers/ashot-1.5.2.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/222477/2.0.0/WebSocketPlugIn.jar"/>
 	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/org.eclipse.osgi/26/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/218123/1.0.1/katalon-studio-chrome-devtools-protocol-plugin.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/220000/1.2.0/Katalon Gmail.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/227874/1.0.3/katalon-studio-microsoftteam-keywords-plugin.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/210970/1.0.2/ExcelKeywords.jar"/>
-	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/176021/1.0.5/katalon-studio-applitools-plugin (1).jar"/>
+	<classpathentry kind="lib" path="/Applications/Katalon Studio.app/Contents/Eclipse/configuration/plugin/install/217847/1.0.0/Katalon Browserstack.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

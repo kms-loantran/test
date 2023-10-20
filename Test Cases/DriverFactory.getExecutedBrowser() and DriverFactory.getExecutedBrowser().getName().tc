@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DriverFactory.getExecutedBrowser() and DriverFactory.getExecutedBrowser().getName()</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f66ac890-ee0d-4013-a877-6b15a7251016</testCaseGuid>
+</TestCaseEntity>
