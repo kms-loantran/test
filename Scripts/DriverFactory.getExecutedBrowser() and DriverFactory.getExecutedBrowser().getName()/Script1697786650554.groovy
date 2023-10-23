@@ -16,43 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.support.events.EventFiringWebDriver
+
 import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.driver.WebUIDriverType
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.selenium.driver.CRemoteWebDriver
 
 WebUI.openBrowser('https://google.com')
 
-Map m = RunConfiguration.getExecutionProperties()
+EventFiringWebDriver driver = DriverFactory.getWebDriver()
+WebDriver wrappedDriver = driver.getWrappedDriver()
 
-String browserType = m.get("drivers").get("system").get("WebUI").get("browserType")
-
-println 'vicky testtttttt browserType: ' + browserType
-
-String browserName =''
-
-switch(browserType) { 
-   default:
-		browserName = 'Chrome'
-		break;
-   case 'FIREFOX_DRIVER': 
-   		browserName = 'Firefox'
-		break;
-   case 'EDGE_CHROMIUM_DRIVER':
-		browserName = 'Edge Chromium'
-		break;
-   case 'SAFARI_DRIVER':
-		browserName = 'Safari'
-		break;
-} 
-
-println 'vicky test browser Name: ' + browserName
-
-WebUIDriverType executedBrowser1 = DriverFactory.getExecutedBrowser()
-
-println 'vicky test 1: ' + executedBrowser1
-
-WebUIDriverType executedBrowser2 = DriverFactory.getExecutedBrowser().getName()
-
-println 'vicky test 2: ' + executedBrowser2
+if (wrappedDriver.class == CRemoteWebDriver) {
+	println 'vicky testttrttt: ' + wrappedDriver.getCapabilities().getCapability("browserName")
+}
 
 WebUI.closeBrowser()
