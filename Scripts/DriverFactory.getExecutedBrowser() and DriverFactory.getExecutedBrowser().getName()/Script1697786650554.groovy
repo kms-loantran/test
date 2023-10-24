@@ -17,20 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.support.events.EventFiringWebDriver
-
 import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.selenium.driver.CRemoteWebDriver
+import com.kms.katalon.core.configuration.RunConfiguration
 
-WebUI.openBrowser('https://google.com')
 
-EventFiringWebDriver driver = DriverFactory.getWebDriver()
-WebDriver wrappedDriver = driver.getWrappedDriver()
 
-if (wrappedDriver.class == CRemoteWebDriver) {
-	println 'vicky testttrttt: ' + wrappedDriver.getCapabilities().getCapability("browserName")
+
+if (RunConfiguration.getExecutionProperties().get("drivers").get("system").get("WebUI") != null) {
+	println 'browser Name is: ' + DriverFactory.getExecutedBrowser()
+} else {
+	println 'browser Name is 2:' + RunConfiguration.getDriverPreferencesProperties().get("Remote").get("browserName")
 }
-
-WebUI.closeBrowser()
