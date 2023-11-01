@@ -20,7 +20,10 @@ steps:
     #xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default"  -apiKey="a5c1f077-2ee0-4584-ba26-978ee2e11484" --config -webui.autoUpdateDrivers=true'
     
-    
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'JUnit Report' 
+    targetPath: report/    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
