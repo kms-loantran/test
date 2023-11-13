@@ -20,40 +20,41 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
 
 
 
-String ks_Chromedriver = DriverFactory.getChromeDriverPath()
-println 'loan testttttttt: ' + ks_Chromedriver
-System.setProperty("webdriver.chrome.driver", ks_Chromedriver)
-
-
-System.setProperty('webdriver.chrome.driver', ks_Chromedriver)
-//Declare your chrome driver
-WebDriver chromeDriver = new ChromeDriver()
-// Tell Katalon to use your Chrome driver:
-DriverFactory.changeWebDriver(chromeDriver)
-
-
-WebUI.navigateToUrl('https://google.com')
-WebUI.closeBrowser()
+//String ks_Chromedriver = DriverFactory.getChromeDriverPath()
+//println 'loan testttttttt: ' + ks_Chromedriver
+//System.setProperty("webdriver.chrome.driver", ks_Chromedriver)
+//
+//
+//System.setProperty('webdriver.chrome.driver', ks_Chromedriver)
+////Declare your chrome driver
+//WebDriver chromeDriver = new ChromeDriver()
+//// Tell Katalon to use your Chrome driver:
+//DriverFactory.changeWebDriver(chromeDriver)
+//
+//
+//WebUI.navigateToUrl('https://google.com')
+//WebUI.closeBrowser()
 
 //============================
 
-//System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
-//
-//ChromeOptions options = new ChromeOptions()
-//
-//String tempDirPath = (System.getProperty('java.io.tmpdir') + '/ChromeDriver/') + System.currentTimeMillis()
-//
-//System.out.println('Temp directory path : ' + tempDirPath)
-//
-////options.addArguments("user-data-dir=$tempDirPath")
-//
-//def driver = new ChromeDriver(options)
-//
-//DriverFactory.changeWebDriver(driver)
-//
-//WebUI.navigateToUrl('google.com')
-//
-//WebUI.closeBrowser()
+System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
+
+ChromeOptions options = new ChromeOptions()
+
+String tempDirPath = (System.getProperty('java.io.tmpdir') + '/ChromeDriver/') + System.currentTimeMillis()
+
+System.out.println('Temp directory path : ' + tempDirPath)
+
+options.addArguments("user-data-dir=$tempDirPath")
+
+def driver = new ChromeDriver(options)
+
+DriverFactory.changeWebDriver(driver)
+
+WebUI.navigateToUrl('google.com')
+
+WebUI.closeBrowser()
