@@ -34,6 +34,26 @@ WebDriver chromeDriver = new ChromeDriver()
 // Tell Katalon to use your Chrome driver:
 DriverFactory.changeWebDriver(chromeDriver)
 
-WebUI.openBrowser('')
+
 WebUI.navigateToUrl('https://google.com')
 WebUI.closeBrowser()
+
+//============================
+
+//System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
+//
+//ChromeOptions options = new ChromeOptions()
+//
+//String tempDirPath = (System.getProperty('java.io.tmpdir') + '/ChromeDriver/') + System.currentTimeMillis()
+//
+//System.out.println('Temp directory path : ' + tempDirPath)
+//
+////options.addArguments("user-data-dir=$tempDirPath")
+//
+//def driver = new ChromeDriver(options)
+//
+//DriverFactory.changeWebDriver(driver)
+//
+//WebUI.navigateToUrl('google.com')
+//
+//WebUI.closeBrowser()
