@@ -17,8 +17,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.remote.LocalFileDetector
+import org.openqa.selenium.support.events.EventFiringWebDriver
+
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.selenium.driver.CRemoteWebDriver
+
+'run pass if running with TestCloud Linux Chrome 118'
+'run failed if running with TestCloud Windows Chrome 118'
+
+//WebUI.openBrowser('')
+//
+//WebUI.navigateToUrl('https://store.katalon.com/signin?returnUrl=/manage/publisher/upload-product')
+//
+//WebUI.setText(findTestObject('Choose File/Page_Store/input_Welcome back_email'), GlobalVariable.username)
+//
+//WebUI.setEncryptedText(findTestObject('Choose File/Page_Store/input_Welcome back_password'), GlobalVariable.pass)
+//
+//WebUI.click(findTestObject('Choose File/Page_Store/button_Sign in'))
+//
+//WebUI.delay(1)
+//
+//String filePath = System.getProperty("user.dir") + File.separator + 'Data' + File.separator + "ExcelKeywords.jar.zip"
+//
+//println 'vicky test filePathhhhhhhhhhhhhhh: ' + filePath
+//
+//WebUI.uploadFile(findTestObject('Object Repository/Choose File/Page_Store/txtChooseFile'), filePath)
+
+'upload file to lambdatest'
 
 WebUI.openBrowser('')
+
+EventFiringWebDriver driver = DriverFactory.getWebDriver()
+WebDriver wrappedDriver = driver.getWrappedDriver()
+System.out.println(wrappedDriver.getClass())
+if (wrappedDriver.class == CRemoteWebDriver) {
+	wrappedDriver.setFileDetector(new LocalFileDetector())
+}
 
 WebUI.navigateToUrl('https://store.katalon.com/signin?returnUrl=/manage/publisher/upload-product')
 
