@@ -3,8 +3,9 @@
    <description></description>
    <name>XCUIElementTypeStaticText - Colombian</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>90a60409-6d73-44d4-b6b7-ff9bb803c8ba</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -12,7 +13,7 @@
       <name>type</name>
       <type>Main</type>
       <value>XCUIElementTypeStaticText</value>
-      <webElementGuid>49da4a6d-f735-4d45-afed-e95ae540691c</webElementGuid>
+      <webElementGuid>8561a3b5-5623-48ef-a3f7-be72c281a758</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +21,7 @@
       <name>accessible</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>617c9c5d-9d3a-4d82-b28d-b1ff961578a9</webElementGuid>
+      <webElementGuid>d7ed805d-2fce-4d9d-885c-bdb3826e5abf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +29,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>2c8b7215-cd98-40ba-b015-5318748d76fb</webElementGuid>
+      <webElementGuid>f5f8e070-7abb-4c57-bbb8-6164878f26ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +37,7 @@
       <name>height</name>
       <type>Main</type>
       <value>96.0</value>
-      <webElementGuid>3db4fede-dbaa-44bd-94f4-4c5791a240e7</webElementGuid>
+      <webElementGuid>21e2c661-9d41-46ea-aa22-ffa2434ffec6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +45,7 @@
       <name>index</name>
       <type>Main</type>
       <value>2</value>
-      <webElementGuid>3841986b-ced6-44ae-ba97-461e5c60f9a7</webElementGuid>
+      <webElementGuid>71d9e7d1-8eb8-43f0-a7b6-def451b4aee8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Colombian</value>
-      <webElementGuid>6ee2b41b-a4ee-4a81-9113-ab6f4306f0ea</webElementGuid>
+      <webElementGuid>a231c633-ee0d-45bc-ad37-8588da9eed36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +61,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Colombian</value>
-      <webElementGuid>baf68e73-e46a-4cdf-8435-e53a0f87814f</webElementGuid>
+      <webElementGuid>af62409e-bdfb-4c3d-929c-c133e724b6c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -68,7 +69,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Colombian</value>
-      <webElementGuid>c0e932cd-2df5-4a9f-992a-e94aafab5edc</webElementGuid>
+      <webElementGuid>3775a7a1-048d-4fa4-881a-88c34c38b184</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,7 +77,7 @@
       <name>width</name>
       <type>Main</type>
       <value>1516.0</value>
-      <webElementGuid>d0c03150-2467-45a1-a601-b15caa7f1344</webElementGuid>
+      <webElementGuid>d6b438bd-9dc9-4680-994f-f8f6009e1343</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +85,7 @@
       <name>x</name>
       <type>Main</type>
       <value>42.0</value>
-      <webElementGuid>6b28a219-d6a7-48ad-9470-aa43afa63dc6</webElementGuid>
+      <webElementGuid>23cb50d5-654b-408e-a8c2-ca7dcf15f040</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,7 +93,7 @@
       <name>y</name>
       <type>Main</type>
       <value>338.0</value>
-      <webElementGuid>e680e420-afdb-456d-b901-0069e48f3e78</webElementGuid>
+      <webElementGuid>a795e87b-5426-4e25-95cd-abb84215dd70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -100,8 +101,59 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]</value>
-      <webElementGuid>625e9425-ad90-4cdb-ad92-a67960805e2d</webElementGuid>
+      <webElementGuid>666955bf-edea-410a-ac1d-bc2a6d1659c4</webElementGuid>
    </webElementProperties>
-   <locator>//*[@type = 'XCUIElementTypeStaticText' and @label = 'Colombian' and @name = 'Colombian' and @value = 'Colombian']</locator>
+   <locator>//*[@type = 'XCUIElementTypeStaticText' and @label = 'Colombian' and @name = 'Colombian' and @value = 'vicky' and @vicky='test']//*vicky[test]</locator>
+   <locatorCollection>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value>**/XCUIElementTypeStaticText[`enabled == 1 AND label == 'Colombian' AND name == 'Colombian' AND value == 'Colombian'`]</value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>Colombian</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>XCUIElementTypeStaticText</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Colombian</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value>type == 'XCUIElementTypeStaticText' AND enabled == 1 AND label == 'Colombian' AND name == 'Colombian' AND name == 'Colombian'</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value>Colombian</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().enabled(true).index(2)</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+         <value>//*[@type = 'XCUIElementTypeStaticText' and @label = 'Colombian' and @name = 'Colombian' and @value = 'vicky' and @vicky='test']//*vicky[test]</value>
+      </entry>
+   </locatorCollection>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <platform>IOS</platform>
 </MobileElementEntity>
