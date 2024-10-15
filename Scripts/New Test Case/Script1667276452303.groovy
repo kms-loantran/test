@@ -52,4 +52,5 @@ KeywordUtil.markFailed("log failed - updated")
 WebUI.closeBrowser()
 
 println 'local ks'
+println 'hahaha'
 
