@@ -11,20 +11,20 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo ${{ variables.loantest }}
-  displayName: 'Run a one-line script'
+- script: echo hello world ${env:LOANTEST}
+  displayName: 'Vicky test'
 
-- task: katalonTask@1
-  inputs:
-    version: '9.0.0.beta'
+#- task: katalonTask@1
+#  inputs:
+#    version: '9.0.0.beta'
     #executeArgs: '-retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -apiKey="4d690cd5-048f-419d-bba7-f560c06e7ded" --config -webui.autoUpdateDrivers=true'
     #xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
  #   executeArgs: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default"  -apiKey= --config -webui.autoUpdateDrivers=true'
     
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'JUnit Report' 
-    targetPath: report/    
+#- task: PublishPipelineArtifact@0
+#  inputs:
+ #   artifactName: 'JUnit Report' 
+ #   targetPath: report/    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
