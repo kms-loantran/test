@@ -11,7 +11,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: "echo hello world $(LOANTEST1) and $(LOANTEST1) "
+- script: "echo hello world $(LOANTEST) and $(LOANTEST) "
   displayName: 'Vicky test'
 
 #- task: katalonTask@1
